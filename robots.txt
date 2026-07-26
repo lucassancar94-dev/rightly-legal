@@ -1,0 +1,11 @@
+# Rechtsseite von Rightly.
+#
+# Sie ist absichtlich nicht für Suchmaschinen bestimmt. Die gesetzliche Pflicht
+# (§5 DDG) ist die Erreichbarkeit für Nutzer — die Seite ist offen im Netz und
+# über den Link in der App mit einem Tipp erreichbar. Eine Pflicht zur
+# Indexierung durch Suchmaschinen gibt es nicht.
+#
+# Der Inhalt selbst ist NICHT verschleiert. Das wäre unzulässig.
+
+User-agent: *
+Disallow: /
