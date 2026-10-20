@@ -99,16 +99,23 @@
 <p><strong>Wann:</strong> Ausschließlich, wenn du aktiv eine Funktion antippst. Nicht beim
 Tippen, nicht im Hintergrund, nicht automatisch.</p>
 <p><strong>Wohin:</strong> An unseren Server (Render, Rechenzentrum Frankfurt) und von dort
-an OpenAI, L.L.C., USA, wo das Sprachmodell die Umformulierung erzeugt. Das Ergebnis kommt
-denselben Weg zurück.</p>
+an einen KI-Anbieter, dessen Sprachmodell die Umformulierung erzeugt: Anthropic oder OpenAI.
+Einer der beiden ist unser Hauptanbieter. Ist er gestört, geht dieselbe Anfrage einmalig an
+den anderen, damit die Funktion trotzdem klappt. Das Ergebnis kommt denselben Weg zurück.</p>
 <p><strong>Wie lange:</strong></p>
 <ul>
   <li>Auf <strong>unserem</strong> Server: gar nicht. Der Text wird verarbeitet und sofort
       verworfen. Unsere Protokolle enthalten nur Zeitpunkt, Pfad und Statuscode — nie
       Textinhalte.</li>
+  <li>Bei <strong>Anthropic</strong>: Anfragen über die Programmierschnittstelle werden nach
+      Angaben von Anthropic innerhalb von 30 Tagen gelöscht. Stuft Anthropics automatische
+      Prüfung eine Anfrage als möglichen Verstoß gegen die Nutzungsrichtlinien ein, kann
+      Anthropic sie bis zu 2 Jahre aufbewahren; außerdem, wenn ein Gesetz es verlangt. Anfragen
+      werden nicht zum Training der Modelle verwendet.</li>
   <li>Bei <strong>OpenAI</strong>: Anfragen über die Programmierschnittstelle werden nach
       Angaben von OpenAI bis zu 30 Tage zur Erkennung von Missbrauch gespeichert und danach
-      gelöscht. Sie werden nicht zum Training der Modelle verwendet.</li>
+      gelöscht, sofern kein Gesetz eine längere Aufbewahrung verlangt. Sie werden nicht zum
+      Training der Modelle verwendet.</li>
 </ul>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
 Nutzungsvertrags — ohne diese Übermittlung kann die Funktion nicht erbracht werden).</p>
@@ -160,18 +167,39 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
 <div class="wrap">
 <table>
   <tr><th>Empfänger</th><th>Zweck</th><th>Sitz</th></tr>
-  <tr><td>OpenAI, L.L.C.</td><td>Erzeugung der Umformulierung</td><td>USA</td></tr>
+  <tr><td>Anthropic Ireland, Limited, 6th Floor, South Bank House, Barrow Street,
+      Dublin 4, D04 TR29, Irland</td><td>Erzeugung der Umformulierung (Haupt- oder
+      Ersatzanbieter)</td><td>Irland, Konzern mit Sitz in den USA</td></tr>
+  <tr><td>OpenAI Ireland Ltd., 1st Floor, The Liffey Trust Centre, 117–126 Sheriff Street
+      Upper, Dublin 1, D01 YC43, Irland</td><td>Erzeugung der Umformulierung (Haupt- oder
+      Ersatzanbieter)</td><td>Irland, Konzern mit Sitz in den USA</td></tr>
   <tr><td>Render Services, Inc.</td><td>Betrieb des Servers</td><td>Rechenzentrum Frankfurt, Unternehmen USA</td></tr>
   <tr><td>Apple Inc.</td><td>Zahlungsabwicklung und Abo-Verwaltung</td><td>USA</td></tr>
 </table>
 </div>
 
-<h3>6. Übermittlung in die USA</h3>
 <p>
-  Die Verarbeitung durch OpenAI findet in den Vereinigten Staaten statt. Die Übermittlung
-  erfolgt auf Grundlage der Standardvertragsklauseln der EU-Kommission
-  (Art. 46 Abs. 2 lit. c DSGVO) bzw., soweit das jeweilige Unternehmen zertifiziert ist, auf
-  Grundlage des EU-US Data Privacy Framework.
+  Anthropic und OpenAI verarbeiten die Texte in unserem Auftrag (Auftragsverarbeitung,
+  Art. 28 DSGVO). Bewahrt ein Anbieter eine Anfrage länger auf, weil seine Prüfung einen
+  möglichen Regelverstoß markiert hat oder ein Gesetz es verlangt, tut er das in eigener
+  Verantwortung.
+</p>
+
+<h3>6. Übermittlung außerhalb der EU</h3>
+<p>
+  Unsere Vertragspartner bei Anthropic und OpenAI sind irische Gesellschaften. Die Anfragen
+  werden aber auch außerhalb der EU verarbeitet: Anthropic speichert sie in den USA und kann
+  die Berechnung in Rechenzentren weltweit durchführen; OpenAI verarbeitet sie ohne besondere
+  Vereinbarung ebenfalls außerhalb der EU. Grundlage sind die Standardvertragsklauseln der
+  EU-Kommission (Art. 46 Abs. 2 lit. c DSGVO) in den Auftragsverarbeitungsverträgen der
+  Anbieter, bei OpenAI alternativ ein Angemessenheitsbeschluss der EU-Kommission
+  (Art. 45 DSGVO).
+</p>
+<p>
+  Render (Betrieb unseres Servers im Rechenzentrum Frankfurt) und Apple sind US-Unternehmen.
+  Soweit dabei Daten in die USA gelangen, geschieht das auf Grundlage des EU-US Data Privacy
+  Framework, soweit das Unternehmen zertifiziert ist, sonst auf Grundlage von
+  Standardvertragsklauseln.
 </p>
 <p>
   Trotz dieser Garantien lässt sich nicht vollständig ausschließen, dass US-Behörden auf
@@ -283,6 +311,6 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 
-<p class="stand">Stand: 25. Juli 2026</p>
+<p class="stand">Stand: 20. Oktober 2026</p>
 
 </main>
