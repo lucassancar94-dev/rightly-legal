@@ -1,19 +1,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rightly — Datenschutz & Impressum</title>
+<title>Rightly: Datenschutz & Impressum</title>
 
 <!--
   Nicht in Suchmaschinen aufnehmen.
 
   Das Impressum muss nach §5 DDG leicht erkennbar, unmittelbar erreichbar und
-  ständig verfügbar sein — das ist es: Die Seite liegt offen im Netz, ist über den
+  ständig verfügbar sein. Das ist es: Die Seite liegt offen im Netz, ist über den
   Link in der App und im App Store mit einem Tipp erreichbar und braucht weder
   Login noch JavaScript. Eine Pflicht, von Google indexiert zu werden, gibt es
   nicht. Deshalb bleibt die Privatanschrift aus den Suchergebnissen heraus,
   ohne die gesetzliche Erreichbarkeit einzuschränken.
 
   Der Text selbst ist bewusst NICHT verschleiert (kein Bild, kein JavaScript,
-  keine zerstückelte Adresse) — genau das wäre ein Verstoß.
+  keine zerstückelte Adresse), genau das wäre ein Verstoß.
 -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
@@ -94,19 +94,27 @@
 
 <h3>3. Was verarbeitet wird</h3>
 
-<h3>3.1 Dein Text — nur auf Knopfdruck</h3>
-<p><strong>Was:</strong> Der Inhalt des Textfelds, in dem du gerade schreibst.</p>
+<h3>3.1 Dein Text, nur auf Knopfdruck</h3>
+<p><strong>Was:</strong> Der Inhalt des Textfelds, in dem du gerade schreibst. Bei
+„Was steht da?“ stattdessen der Text, den du vorher in die Zwischenablage kopiert hast.</p>
 <p><strong>Wann:</strong> Ausschließlich, wenn du aktiv eine Funktion antippst. Nicht beim
-Tippen, nicht im Hintergrund, nicht automatisch.</p>
-<p><strong>Wohin:</strong> An unseren Server (Render, Rechenzentrum Frankfurt) und von dort
+Tippen, nicht im Hintergrund, nicht automatisch. Die Zwischenablage liest die Tastatur nur in
+dem Moment, in dem du „Was steht da?“ antippst.</p>
+<p><strong>Wohin:</strong> An unseren Server (Render, Rechenzentrum in den USA) und von dort
 an einen KI-Anbieter, dessen Sprachmodell die Umformulierung erzeugt: Anthropic oder OpenAI.
 Einer der beiden ist unser Hauptanbieter. Ist er gestört, geht dieselbe Anfrage einmalig an
 den anderen, damit die Funktion trotzdem klappt. Das Ergebnis kommt denselben Weg zurück.</p>
+<p><strong>Eigene Befehle und Zielsprache:</strong> Name und Anweisung deiner eigenen Befehle
+speichert die App nur auf deinem Gerät, im gemeinsamen Speicher von App und Tastatur. Du kannst
+sie in der App jederzeit löschen. Tippst du einen eigenen Befehl an, geht seine Anweisung
+zusammen mit deinem Text denselben Weg an unseren Server und den KI-Anbieter. Der Name bleibt
+auf dem Gerät. Wählst du bei „Auf Englisch“ eine andere Sprache, geht zusätzlich die gewählte
+Sprache mit.</p>
 <p><strong>Wie lange:</strong></p>
 <ul>
-  <li>Auf <strong>unserem</strong> Server: gar nicht. Der Text wird verarbeitet und sofort
-      verworfen. Unsere Protokolle enthalten nur Zeitpunkt, Pfad und Statuscode — nie
-      Textinhalte.</li>
+  <li>Auf <strong>unserem</strong> Server: gar nicht. Text und Befehl werden verarbeitet und
+      sofort verworfen. Unsere Protokolle enthalten nur Zeitpunkt, Pfad und Statuscode, bei
+      Störungen zusätzlich Fehlerart, Funktion und Textlänge. Nie Textinhalte.</li>
   <li>Bei <strong>Anthropic</strong>: Anfragen über die Programmierschnittstelle werden nach
       Angaben von Anthropic innerhalb von 30 Tagen gelöscht. Stuft Anthropics automatische
       Prüfung eine Anfrage als möglichen Verstoß gegen die Nutzungsrichtlinien ein, kann
@@ -118,7 +126,7 @@ den anderen, damit die Funktion trotzdem klappt. Das Ergebnis kommt denselben We
       Training der Modelle verwendet.</li>
 </ul>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
-Nutzungsvertrags — ohne diese Übermittlung kann die Funktion nicht erbracht werden).</p>
+Nutzungsvertrags, ohne diese Übermittlung kann die Funktion nicht erbracht werden).</p>
 
 <h3>3.2 Anonyme Gerätekennung</h3>
 <p><strong>Was:</strong> Eine zufällige Zeichenfolge, die die App auf deinem Gerät erzeugt.
@@ -154,11 +162,13 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
 <p>
   iOS verlangt für Tastaturen mit Internetverbindung die Berechtigung
   <strong>„Vollzugriff erlauben“</strong>. Ohne sie kann die Tastatur keine Verbindung zu
-  unserem Server aufbauen — die KI-Funktionen wären nicht nutzbar.
+  unserem Server aufbauen. Die KI-Funktionen wären nicht nutzbar.
 </p>
 <p>
-  Wir nutzen diese Berechtigung ausschließlich, um deinen Text auf deinen ausdrücklichen
-  Knopfdruck an unseren Server zu senden und das Ergebnis zurückzuholen. Wir lesen nichts
+  Wir nutzen diese Berechtigung nur, um deinen Text (bei „Was steht da?“ den Text aus der
+  Zwischenablage) auf deinen ausdrücklichen Knopfdruck an unseren Server zu senden und das
+  Ergebnis zurückzuholen. Außerdem liest die Tastatur damit Einstellungen, Abo-Status und
+  eigene Befehle aus dem gemeinsamen Speicher mit der Rightly-App. Wir lesen nichts
   mit, während du tippst, wir sammeln keine Tastenanschläge und übertragen nichts im
   Hintergrund.
 </p>
@@ -170,10 +180,10 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   <tr><td>Anthropic Ireland, Limited, 6th Floor, South Bank House, Barrow Street,
       Dublin 4, D04 TR29, Irland</td><td>Erzeugung der Umformulierung (Haupt- oder
       Ersatzanbieter)</td><td>Irland, Konzern mit Sitz in den USA</td></tr>
-  <tr><td>OpenAI Ireland Ltd., 1st Floor, The Liffey Trust Centre, 117–126 Sheriff Street
+  <tr><td>OpenAI Ireland Ltd., 1st Floor, The Liffey Trust Centre, 117-126 Sheriff Street
       Upper, Dublin 1, D01 YC43, Irland</td><td>Erzeugung der Umformulierung (Haupt- oder
       Ersatzanbieter)</td><td>Irland, Konzern mit Sitz in den USA</td></tr>
-  <tr><td>Render Services, Inc.</td><td>Betrieb des Servers</td><td>Rechenzentrum Frankfurt, Unternehmen USA</td></tr>
+  <tr><td>Render Services, Inc.</td><td>Betrieb des Servers</td><td>USA (Rechenzentrum und Unternehmen)</td></tr>
   <tr><td>Apple Inc.</td><td>Zahlungsabwicklung und Abo-Verwaltung</td><td>USA</td></tr>
 </table>
 </div>
@@ -196,9 +206,10 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   (Art. 45 DSGVO).
 </p>
 <p>
-  Render (Betrieb unseres Servers im Rechenzentrum Frankfurt) ist ein US-Unternehmen und unter
-  dem EU-US Data Privacy Framework zertifiziert. Soweit Daten in die USA gelangen, ist das die
-  Grundlage (Angemessenheitsbeschluss, Art. 45 DSGVO); hilfsweise gelten die
+  Unser Server läuft bei Render in einem Rechenzentrum in den USA. Alles, was die App an ihn
+  schickt (Text, Befehl, Gerätekennung, IP-Adresse, Abo-Nachweis), gelangt also in die USA.
+  Render ist ein US-Unternehmen und unter dem EU-US Data Privacy Framework zertifiziert. Das ist
+  die Grundlage (Angemessenheitsbeschluss, Art. 45 DSGVO); hilfsweise gelten die
   Standardvertragsklauseln aus dem Auftragsverarbeitungsvertrag von Render. Die Zahlung wickelt
   Apple über deine Apple-ID in eigener Verantwortung nach Apples eigener Datenschutzrichtlinie ab.
 </p>
@@ -213,7 +224,8 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   <li>Keine Werbung, keine Werbe-Kennungen, kein Profiling</li>
   <li>Keine Analyse- oder Absturz-Werkzeuge von Dritten</li>
   <li>Kein Verkauf und keine Weitergabe von Daten zu Werbezwecken</li>
-  <li>Kein Auslesen von Tastenanschlägen, Zwischenablage oder anderen Apps</li>
+  <li>Kein Auslesen von Tastenanschlägen oder anderen Apps. Die Zwischenablage liest die
+      Tastatur nur, wenn du „Was steht da?“ antippst.</li>
 </ul>
 
 <h3>8. Deine Rechte</h3>
@@ -251,7 +263,7 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
 <p>
   <strong>Maschinell erzeugte Ergebnisse:</strong> Die Umformulierungen stammen von einem
   Sprachmodell. Sie können sachlich falsch sein oder die Bedeutung verändern. Lies das
-  Ergebnis, bevor du es absendest — die Verantwortung für abgesendete Nachrichten liegt
+  Ergebnis, bevor du es absendest. Die Verantwortung für abgesendete Nachrichten liegt
   bei dir. Rightly ersetzt keine rechtliche, medizinische oder finanzielle Beratung.
 </p>
 <p>
@@ -270,7 +282,7 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   Für das Abonnement „Rightly Pro“ gilt der Standard-Lizenzvertrag von Apple für
   In-App-Käufe:
   <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard
-  End User License Agreement</a>. Vertragspartner beim Kauf ist Apple, nicht wir — Zahlung,
+  End User License Agreement</a>. Vertragspartner beim Kauf ist Apple, nicht wir. Zahlung,
   Verlängerung, Kündigung und Rückerstattungen laufen über deine Apple-ID.
 </p>
 <p>
@@ -312,6 +324,6 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 
-<p class="stand">Stand: 20. Oktober 2026</p>
+<p class="stand">Stand: 1. November 2026</p>
 
 </main>
