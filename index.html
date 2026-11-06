@@ -114,7 +114,9 @@ Sprache mit.</p>
 <ul>
   <li>Auf <strong>unserem</strong> Server: gar nicht. Text und Befehl werden verarbeitet und
       sofort verworfen. Unsere Protokolle enthalten nur Zeitpunkt, Pfad und Statuscode, bei
-      Störungen zusätzlich Fehlerart, Funktion und Textlänge. Nie Textinhalte.</li>
+      Störungen zusätzlich Fehlerart, Funktion und Textlänge, nach einer erfolgreichen Aktion
+      zusätzlich einen Hash der Gerätekennung (siehe 3.2), die Abo-Art und die gewählte
+      Funktion. Nie Textinhalte.</li>
   <li>Bei <strong>Anthropic</strong>: Anfragen über die Programmierschnittstelle werden nach
       Angaben von Anthropic innerhalb von 30 Tagen gelöscht. Stuft Anthropics automatische
       Prüfung eine Anfrage als möglichen Verstoß gegen die Nutzungsrichtlinien ein, kann
@@ -131,11 +133,16 @@ Nutzungsvertrags, ohne diese Übermittlung kann die Funktion nicht erbracht werd
 <h3>3.2 Anonyme Gerätekennung</h3>
 <p><strong>Was:</strong> Eine zufällige Zeichenfolge, die die App auf deinem Gerät erzeugt.
 Sie enthält keine Angaben über dich oder dein Gerät und lässt sich keiner Person zuordnen.</p>
-<p><strong>Wozu:</strong> Um das Tageslimit von 50 Aktionen durchzusetzen.</p>
-<p><strong>Wie lange:</strong> Im Arbeitsspeicher unseres Servers, längstens bis zum Ende des
-Kalendertags (Zeitzone Europe/Berlin). Danach wird der Zähler verworfen.</p>
+<p><strong>Wozu:</strong> Um das Tageslimit von 50 Aktionen durchzusetzen und um zu zählen,
+wie viele verschiedene Geräte Rightly nutzen. Für die Zählung schreibt unser Server nach jeder
+erfolgreichen Aktion eine Zeile ins Protokoll: einen Hash der Kennung (eine Einwegverschlüsselung,
+aus der sich die Kennung nicht zurückrechnen lässt), die Abo-Art (ohne Abo, Testkauf oder
+App-Store-Abo) und die gewählte Funktion. Text, IP-Adresse und Abo-Nachweis stehen nicht darin.</p>
+<p><strong>Wie lange:</strong> Der Zähler für das Tageslimit liegt im Arbeitsspeicher unseres
+Servers, längstens bis zum Ende des Kalendertags (Zeitzone Europe/Berlin), und wird danach
+verworfen. Die Protokollzeilen löscht unser Hoster Render automatisch nach höchstens 30 Tagen.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
-der Begrenzung von Missbrauch und Kosten).</p>
+der Begrenzung von Missbrauch und Kosten und an der Messung, wie Rightly genutzt wird).</p>
 
 <h3>3.3 IP-Adresse</h3>
 <p><strong>Was:</strong> Die IP-Adresse, mit der deine Anfrage bei uns ankommt.</p>
@@ -324,6 +331,6 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 
-<p class="stand">Stand: 1. November 2026</p>
+<p class="stand">Stand: 6. November 2026</p>
 
 </main>
