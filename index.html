@@ -84,7 +84,7 @@
 <p>
   Rightly ist eine Tastatur ohne Nutzerkonto. Du musst dich nicht registrieren, wir fragen
   weder Name noch E-Mail-Adresse ab. Es gibt keine Werbung, kein Tracking, keine
-  Analyse-Werkzeuge und keine Weitergabe von Daten zu Werbezwecken.
+  Analyse-Werkzeuge von Dritten und keine Weitergabe von Daten zu Werbezwecken.
 </p>
 <p>
   <strong>Beim normalen Tippen verlässt kein Zeichen dein Gerät.</strong> Die Tastatur liest
@@ -132,19 +132,34 @@ Nutzungsvertrags, ohne diese Übermittlung kann die Funktion nicht erbracht werd
 
 <h3>3.2 Anonyme Gerätekennung</h3>
 <p><strong>Was:</strong> Eine zufällige Zeichenfolge, die die App auf deinem Gerät erzeugt.
-Sie enthält keine Angaben über dich oder dein Gerät und lässt sich keiner Person zuordnen.</p>
+Sie enthält keine Angaben über dich oder dein Gerät. Wir können sie keiner Person zuordnen.</p>
 <p><strong>Wozu:</strong> Um das Tageslimit von 50 Aktionen durchzusetzen und um zu zählen,
 wie viele verschiedene Geräte Rightly nutzen. Für die Zählung schreibt unser Server nach jeder
 erfolgreichen Aktion eine Zeile ins Protokoll: einen Hash der Kennung (eine Einwegverschlüsselung,
 aus der sich die Kennung nicht zurückrechnen lässt), die Abo-Art (ohne Abo, Testkauf oder
-App-Store-Abo) und die gewählte Funktion. Text, IP-Adresse und Abo-Nachweis stehen nicht darin.</p>
+App-Store-Abo) und die gewählte Funktion. Text, IP-Adresse und Abo-Nachweis stehen nicht darin. Außerdem nutzen wir die Kennung für
+die Zählung der Einrichtungsschritte (siehe 3.3) und die Zuordnung der Abo-Meldungen
+(siehe 3.6). Beim Kauf geht die Kennung an Apple.</p>
 <p><strong>Wie lange:</strong> Der Zähler für das Tageslimit liegt im Arbeitsspeicher unseres
 Servers, längstens bis zum Ende des Kalendertags (Zeitzone Europe/Berlin), und wird danach
 verworfen. Die Protokollzeilen löscht unser Hoster Render automatisch nach höchstens 30 Tagen.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
 der Begrenzung von Missbrauch und Kosten und an der Messung, wie Rightly genutzt wird).</p>
 
-<h3>3.3 IP-Adresse</h3>
+<h3>3.3 Einrichtungsschritte</h3>
+<p><strong>Was:</strong> Die App meldet unserem Server, welche Schritte der Einrichtung
+erreicht wurden: App geöffnet, Schritte der Anleitung, Tastatur aktiviert, Bezahlseite
+gesehen, Kauf bestätigt, abgebrochen oder fehlgeschlagen. Mit jeder Meldung gehen die
+Gerätekennung (siehe 3.2) und die App-Version mit. Ins Protokoll schreibt unser Server davon
+nur einen Hash der Kennung, den Schritt und die Version. Kein Text, keine IP-Adresse.</p>
+<p><strong>Wozu:</strong> Um zu sehen, an welchem Schritt die Einrichtung hängt, und sie zu
+verbessern.</p>
+<p><strong>Wie lange:</strong> Die Meldungen stehen nur im Protokoll unseres Servers. Unser
+Hoster Render löscht sie automatisch nach höchstens 30 Tagen.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+der Messung, wie Rightly genutzt wird, und an einer besseren Einrichtung).</p>
+
+<h3>3.4 IP-Adresse</h3>
 <p><strong>Was:</strong> Die IP-Adresse, mit der deine Anfrage bei uns ankommt.</p>
 <p><strong>Wozu:</strong> Ausschließlich, um übermäßig viele Anfragen aus demselben Netz zu
 begrenzen.</p>
@@ -154,7 +169,7 @@ Daten statt.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
 der Abwehr von Missbrauch).</p>
 
-<h3>3.4 Abo-Nachweis</h3>
+<h3>3.5 Abo-Nachweis</h3>
 <p><strong>Was:</strong> Wenn du „Rightly Pro“ abonniert hast, sendet die App den von Apple
 signierten Kaufnachweis mit. Wir prüfen dessen Echtheit rechnerisch auf unserem Server und
 lesen daraus nur, ob ein gültiges Abo besteht und wann es endet.</p>
@@ -164,6 +179,23 @@ muss.</p>
 <p><strong>Zahlungsabwicklung:</strong> Die Zahlung läuft vollständig über deine Apple-ID.
 Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+<h3>3.6 Abo-Meldungen von Apple</h3>
+<p><strong>Was:</strong> Apple teilt unserem Server alle Ereignisse zu deinem Abo mit, zum
+Beispiel Beginn einer Probezeit, Kauf, Verlängerung, fehlgeschlagene Zahlung, Ablauf,
+Kündigung und Erstattung. Jede Meldung enthält eine
+Transaktionsnummer, das Produkt, das Angebot und den Preis. Beim Kauf übergibt die App die
+Gerätekennung (siehe 3.2) an Apple, Apple schickt sie mit jeder Meldung zurück. Wir speichern
+davon nur einen Hash.</p>
+<p><strong>Was wir speichern:</strong> Von der Transaktionsnummer nur einen gekürzten Hash (ein
+Pseudonym), nicht die Nummer selbst. Dazu den Hash der Gerätekennung, die Art des Ereignisses
+und ob es ein Testkauf war, Produkt, Angebot und Preis. Keinen Namen, keine Apple-ID, keine Zahlungsdaten.</p>
+<p><strong>Wozu:</strong> Um zu sehen, wie viele Probezeiten zu einem Abo werden und wo
+Käufe abbrechen.</p>
+<p><strong>Wie lange:</strong> Nur im Protokoll unseres Servers. Unser Hoster Render löscht
+es automatisch nach höchstens 30 Tagen.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+der Messung, wie Rightly genutzt wird).</p>
 
 <h3>4. „Vollzugriff“ der Tastatur</h3>
 <p>
@@ -331,6 +363,6 @@ Wir erhalten von Apple keine Zahlungsdaten, keinen Namen und keine Adresse.</p>
   an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 
-<p class="stand">Stand: 6. November 2026</p>
+<p class="stand">Stand: 7. November 2026</p>
 
 </main>
