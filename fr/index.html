@@ -1,0 +1,407 @@
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rightly : Confidentialité et mentions légales</title>
+
+<!--
+  Ne pas indexer dans les moteurs de recherche.
+
+  Version française de ../index.html. Même règle que la version allemande :
+  les mentions légales (§5 DDG) doivent être facilement identifiables, directement
+  accessibles et disponibles en permanence. C'est le cas : la page est publique,
+  accessible en un geste depuis l'app et l'App Store, sans connexion ni JavaScript.
+  Aucune obligation d'être indexé par Google. L'adresse privée reste donc hors des
+  résultats de recherche, sans restreindre l'accessibilité légale.
+
+  Le texte n'est volontairement PAS masqué (pas d'image, pas de JavaScript,
+  pas d'adresse découpée), ce serait justement une infraction.
+-->
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<link rel="alternate" hreflang="de" href="../">
+<link rel="alternate" hreflang="fr" href="./">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5c5c5c;
+    --accent: #16a34a; --line: #e4e4e7; --box: #f7f7f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111113; --fg: #ececee; --muted: #a1a1aa;
+      --accent: #22c55e; --line: #2a2a2e; --box: #1a1a1d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  h2 { font-size: 1.3rem; margin: 2.5rem 0 .75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); margin: 0 0 2rem; }
+  address, .box {
+    font-style: normal; background: var(--box); border: 1px solid var(--line);
+    border-radius: 10px; padding: 1rem 1.15rem; margin: 1rem 0;
+  }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .wrap { overflow-x: auto; }
+  .stand { color: var(--muted); font-size: .9rem; margin-top: 3rem; }
+  ul { padding-left: 1.25rem; }
+  .nav { display: flex; gap: 1.25rem; margin: 1.5rem 0 2.5rem; flex-wrap: wrap; }
+  .nav a { text-decoration: none; font-weight: 600; }
+</style>
+
+<main>
+
+<h1>Rightly</h1>
+<p class="lead">Politique de confidentialité et mentions légales · <a href="../" hreflang="de" lang="de">Deutsch</a></p>
+
+<div class="nav">
+  <a href="#confidentialite">Politique de confidentialité</a>
+  <a href="#conditions">Conditions d’utilisation</a>
+  <a href="#mentions-legales">Mentions légales</a>
+</div>
+
+<span id="datenschutz"></span>
+<h2 id="confidentialite">Politique de confidentialité</h2>
+
+<h3>1. Responsable du traitement</h3>
+<p>Responsable du traitement des données personnelles dans l’app « Rightly » :</p>
+<address>
+  Lucas Sancar<br>
+  Liniup (entreprise individuelle)<br>
+  Berufsschulstraße 11<br>
+  63795 Obernburg am Main<br>
+  Allemagne<br><br>
+  E-mail : <a href="mailto:rightlyinfo@gmail.com">rightlyinfo@gmail.com</a>
+</address>
+
+<h3>2. Principe</h3>
+<p>
+  Rightly est un clavier sans compte utilisateur. Vous n’avez pas besoin de vous inscrire,
+  nous ne demandons ni nom ni adresse e-mail. Il n’y a pas de publicité, pas de pistage, pas
+  d’outils d’analyse de tiers et aucune transmission de données à des fins publicitaires.
+</p>
+<p>
+  <strong>Pendant la frappe normale, aucun caractère ne quitte votre appareil.</strong> Le clavier
+  lit votre texte uniquement au moment où vous touchez vous-même une fonction
+  (par ex. « Reformuler »).
+</p>
+
+<h3>3. Données traitées</h3>
+
+<h3>3.1 Votre texte, uniquement sur pression d’un bouton</h3>
+<p><strong>Quoi :</strong> le contenu du champ de texte dans lequel vous écrivez. Pour
+« Was steht da? », c’est à la place le texte que vous avez copié auparavant dans le presse-papiers.</p>
+<p><strong>Quand :</strong> uniquement lorsque vous touchez activement une fonction. Pas pendant
+la frappe, pas en arrière-plan, pas automatiquement. Le clavier ne lit le presse-papiers qu’au
+moment où vous touchez « Was steht da? ».</p>
+<p><strong>Où :</strong> vers notre serveur (Render, centre de données aux États-Unis), puis de là
+vers un fournisseur d’IA dont le modèle de langage génère la reformulation : Anthropic ou OpenAI.
+L’un des deux est notre fournisseur principal. S’il est perturbé, la même requête est envoyée une
+seule fois à l’autre, afin que la fonction marche quand même. Le résultat revient par le même chemin.</p>
+<p><strong>Commandes personnelles et langue cible :</strong> l’app enregistre le nom et l’instruction
+de vos commandes personnelles uniquement sur votre appareil, dans l’espace de stockage partagé entre
+l’app et le clavier. Vous pouvez les supprimer à tout moment dans l’app. Si vous touchez une commande
+personnelle, son instruction suit le même chemin que votre texte vers notre serveur et le fournisseur
+d’IA. Le nom reste sur l’appareil. Si vous choisissez une autre langue pour « En anglais », la langue
+choisie est également transmise.</p>
+<p><strong>Région :</strong> si votre iPhone est réglé sur la Suisse, le Liechtenstein ou l’Autriche,
+l’app envoie ce code pays avec chaque requête à l’IA (par exemple « CH »). L’IA écrit ainsi selon
+l’orthographe allemande suisse (ss au lieu de ß) ou conserve des mots autrichiens comme « Jänner ».
+Le fournisseur d’IA apprend seulement quelle graphie utiliser. Nous n’enregistrons pas la région.
+Pour toute autre région, rien n’est transmis.</p>
+<p><strong>Langue de l’app :</strong> si l’app est réglée en français, elle envoie en plus le code
+« fr » avec chaque requête à l’IA, afin que l’IA réponde en français. La région n’est alors pas
+transmise. Si l’app est en allemand, aucun code de langue n’est transmis.</p>
+<p><strong>Durée de conservation :</strong></p>
+<ul>
+  <li>Sur <strong>notre</strong> serveur : aucune. Le texte et la commande sont traités puis
+      immédiatement supprimés. Nos journaux contiennent seulement l’heure, le chemin et le code
+      de statut, en cas de panne également le type d’erreur, la fonction et la longueur du texte,
+      après une action réussie également un hachage de l’identifiant de l’appareil (voir 3.2), le
+      type d’abonnement et la fonction choisie, et si l’app est en français, également le code « fr ».
+      Jamais le contenu des textes.</li>
+  <li>Chez <strong>Anthropic</strong> : selon Anthropic, les requêtes passées par l’interface de
+      programmation sont supprimées dans un délai de 30 jours. Si le contrôle automatique
+      d’Anthropic classe une requête comme une violation possible des règles d’utilisation,
+      Anthropic peut la conserver jusqu’à 2 ans, ainsi que lorsqu’une loi l’exige. Les requêtes
+      ne sont pas utilisées pour entraîner les modèles.</li>
+  <li>Chez <strong>OpenAI</strong> : selon OpenAI, les requêtes passées par l’interface de
+      programmation sont conservées jusqu’à 30 jours pour détecter les abus, puis supprimées,
+      sauf si une loi exige une conservation plus longue. Elles ne sont pas utilisées pour
+      entraîner les modèles.</li>
+</ul>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point b) du RGPD (exécution du contrat
+d’utilisation, la fonction ne peut pas être fournie sans cette transmission).</p>
+
+<h3>3.2 Identifiant pseudonyme de l’appareil</h3>
+<p><strong>Quoi :</strong> une suite de caractères aléatoire que l’app génère sur votre appareil.
+Elle ne contient aucune information sur vous ou sur votre appareil. Nous n’apprenons à ce sujet ni
+nom, ni identifiant Apple, ni coordonnées.</p>
+<p><strong>Pourquoi :</strong> pour appliquer la limite quotidienne de 50 actions et pour compter
+combien d’appareils différents utilisent Rightly. Pour ce comptage, notre serveur écrit une ligne
+dans le journal après chaque action réussie : un hachage de l’identifiant (une empreinte calculée par une fonction de hachage à sens
+unique, qui ne permet pas de retrouver l’identifiant), le type d’abonnement (sans abonnement, achat
+test ou abonnement App Store) et la fonction choisie. Le texte, l’adresse IP et la preuve
+d’abonnement n’y figurent pas. Nous utilisons aussi l’identifiant pour compter les étapes de
+configuration (voir 3.3) et pour rattacher les notifications d’abonnement (voir 3.6). Lors de
+l’achat, l’identifiant est transmis à Apple.</p>
+<p><strong>Durée de conservation :</strong> le compteur de la limite quotidienne se trouve dans la
+mémoire vive de notre serveur, au plus tard jusqu’à la fin du jour calendaire (fuseau horaire
+Europe/Berlin), puis il est supprimé. Notre hébergeur Render supprime automatiquement les lignes
+de journal au bout de 30 jours au maximum.</p>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point f) du RGPD (intérêt légitime à
+limiter les abus et les coûts et à mesurer l’utilisation de Rightly).</p>
+
+<h3>3.3 Étapes de configuration</h3>
+<p><strong>Quoi :</strong> l’app signale à notre serveur quelles étapes de la configuration ont
+été atteintes : app ouverte, étapes du guide, clavier activé, page de paiement vue, achat confirmé,
+annulé ou échoué. Chaque signalement contient l’identifiant de l’appareil (voir 3.2) et la version
+de l’app. Notre serveur n’en inscrit dans le journal qu’un hachage de l’identifiant, l’étape et la
+version. Aucun texte, aucune adresse IP.</p>
+<p><strong>Pourquoi :</strong> pour voir à quelle étape la configuration bloque et l’améliorer.</p>
+<p><strong>Durée de conservation :</strong> les signalements figurent uniquement dans le journal de
+notre serveur. Notre hébergeur Render les supprime automatiquement au bout de 30 jours au maximum.</p>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point f) du RGPD (intérêt légitime à
+mesurer l’utilisation de Rightly et à améliorer la configuration).</p>
+
+<h3>3.4 Adresse IP</h3>
+<p><strong>Quoi :</strong> l’adresse IP avec laquelle votre requête nous parvient.</p>
+<p><strong>Pourquoi :</strong> uniquement pour limiter un nombre excessif de requêtes provenant du
+même réseau.</p>
+<p><strong>Durée de conservation :</strong> uniquement en mémoire vive, au plus tard jusqu’à la fin
+du jour calendaire. Il n’y a ni conservation durable ni recoupement avec d’autres données.</p>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point f) du RGPD (intérêt légitime à la
+prévention des abus).</p>
+
+<h3>3.5 Preuve d’abonnement</h3>
+<p><strong>Quoi :</strong> si vous êtes abonné à « Rightly Pro », l’app envoie la preuve d’achat
+signée par Apple. Nous vérifions son authenticité par calcul sur notre serveur et n’en lisons que
+l’existence d’un abonnement valide et sa date de fin.</p>
+<p><strong>Durée de conservation :</strong> nous n’enregistrons pas la preuve. Le résultat de la
+vérification est conservé au maximum cinq minutes en mémoire vive, afin que chaque requête n’ait
+pas à refaire le calcul.</p>
+<p><strong>Paiement :</strong> le paiement passe entièrement par votre identifiant Apple. Nous ne
+recevons d’Apple aucune donnée de paiement, aucun nom et aucune adresse.</p>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point b) du RGPD.</p>
+
+<h3>3.6 Notifications d’abonnement d’Apple</h3>
+<p><strong>Quoi :</strong> Apple communique à notre serveur tous les événements liés à votre
+abonnement, par exemple le début d’une période d’essai, l’achat, le renouvellement, un paiement
+échoué, l’expiration, la résiliation et le remboursement. Chaque notification contient un numéro de
+transaction, le produit, l’offre et le prix. Lors de l’achat, l’app transmet l’identifiant de
+l’appareil (voir 3.2) à Apple, qui le renvoie avec chaque notification. Nous n’en enregistrons
+qu’un hachage.</p>
+<p><strong>Ce que nous enregistrons :</strong> du numéro de transaction, seulement un hachage
+raccourci (un pseudonyme), pas le numéro lui-même. En plus, le hachage de l’identifiant de
+l’appareil, le type d’événement et s’il s’agissait d’un achat test, le produit, l’offre et le prix.
+Aucun nom, aucun identifiant Apple, aucune donnée de paiement.</p>
+<p><strong>Pourquoi :</strong> pour voir combien de périodes d’essai deviennent un abonnement et
+où les achats s’interrompent.</p>
+<p><strong>Durée de conservation :</strong> uniquement dans le journal de notre serveur. Notre
+hébergeur Render le supprime automatiquement au bout de 30 jours au maximum.</p>
+<p><strong>Base légale :</strong> art. 6, paragraphe 1, point f) du RGPD (intérêt légitime à
+mesurer l’utilisation de Rightly).</p>
+
+<h3>4. « Accès complet » du clavier</h3>
+<p>
+  Pour les claviers avec connexion Internet, iOS exige l’autorisation
+  <strong>« Autoriser l’accès complet »</strong>. Sans elle, le clavier ne peut pas se connecter à
+  notre serveur. Les fonctions d’IA ne seraient pas utilisables.
+</p>
+<p>
+  Nous utilisons cette autorisation uniquement pour envoyer votre texte (pour « Was steht da? », le
+  texte du presse-papiers) à notre serveur, sur votre pression explicite d’un bouton, et pour
+  récupérer le résultat. Le clavier l’utilise aussi pour lire les réglages, le statut de
+  l’abonnement et les commandes personnelles dans l’espace de stockage partagé avec l’app Rightly.
+  Nous ne lisons rien pendant que vous tapez, nous ne collectons aucune frappe et ne transmettons
+  rien en arrière-plan.
+</p>
+
+<h3>5. Destinataires et sous-traitants</h3>
+<div class="wrap">
+<table>
+  <tr><th>Destinataire</th><th>Finalité</th><th>Siège</th></tr>
+  <tr><td>Anthropic Ireland, Limited, 6th Floor, South Bank House, Barrow Street,
+      Dublin 4, D04 TR29, Irlande</td><td>Génération de la reformulation (fournisseur principal
+      ou de secours)</td><td>Irlande, groupe dont le siège est aux États-Unis</td></tr>
+  <tr><td>OpenAI Ireland Ltd., 1st Floor, The Liffey Trust Centre, 117-126 Sheriff Street
+      Upper, Dublin 1, D01 YC43, Irlande</td><td>Génération de la reformulation (fournisseur
+      principal ou de secours)</td><td>Irlande, groupe dont le siège est aux États-Unis</td></tr>
+  <tr><td>Render Services, Inc.</td><td>Exploitation du serveur</td><td>États-Unis (centre de données et entreprise)</td></tr>
+  <tr><td>Apple Inc.</td><td>Paiement et gestion des abonnements</td><td>États-Unis</td></tr>
+</table>
+</div>
+
+<p>
+  Anthropic et OpenAI traitent les textes pour notre compte en tant que sous-traitants
+  (art. 28 du RGPD). Si un fournisseur conserve une requête plus longtemps parce que son contrôle
+  a signalé une violation possible des règles ou qu’une loi l’exige, il le fait sous sa propre
+  responsabilité.
+</p>
+
+<h3>6. Transferts hors de l’UE</h3>
+<p>
+  Nos cocontractants chez Anthropic et OpenAI sont des sociétés irlandaises. Les requêtes sont
+  toutefois aussi traitées hors de l’UE : Anthropic les enregistre aux États-Unis et peut
+  effectuer le calcul dans des centres de données du monde entier. OpenAI les traite également
+  hors de l’UE en l’absence d’accord particulier. Ces transferts reposent sur les clauses
+  contractuelles types de la Commission européenne (art. 46, paragraphe 2, point c) du RGPD)
+  figurant dans les contrats de sous-traitance des fournisseurs, et pour OpenAI, à titre
+  alternatif, sur une décision d’adéquation de la Commission européenne (art. 45 du RGPD).
+</p>
+<p>
+  Notre serveur fonctionne chez Render dans un centre de données aux États-Unis. Tout ce que l’app
+  lui envoie (texte, commande, identifiant de l’appareil, adresse IP, preuve d’abonnement, et pour
+  CH, LI et AT la région, si l’app est en français le code « fr ») arrive donc aux États-Unis. Render est une entreprise américaine
+  certifiée au titre du cadre de protection des données UE-États-Unis (EU-US Data Privacy
+  Framework). C’est la base du transfert (décision d’adéquation, art. 45 du RGPD). À titre
+  subsidiaire s’appliquent les clauses contractuelles types du contrat de sous-traitance de
+  Render. Apple traite le paiement via votre identifiant Apple sous sa propre responsabilité,
+  selon sa propre politique de confidentialité.
+</p>
+<p>
+  Malgré ces garanties, il ne peut être totalement exclu que des autorités américaines accèdent
+  aux données sans qu’il soit possible de s’y opposer par des voies de recours européennes.
+</p>
+
+<h3>7. Ce que nous ne faisons pas</h3>
+<ul>
+  <li>Pas de comptes utilisateur, pas d’inscription</li>
+  <li>Pas de publicité, pas d’identifiants publicitaires, pas de profilage</li>
+  <li>Pas d’outils d’analyse ou de rapports de plantage de tiers</li>
+  <li>Pas de vente ni de transmission de données à des fins publicitaires</li>
+  <li>Aucune lecture des frappes ou d’autres apps. Le clavier ne lit le presse-papiers que si
+      vous touchez « Was steht da? ».</li>
+</ul>
+
+<h3>8. Vos droits</h3>
+<p>
+  Vous disposez d’un droit d’accès (art. 15), de rectification (art. 16), d’effacement (art. 17),
+  à la limitation du traitement (art. 18), à la portabilité des données (art. 20) ainsi que d’un
+  droit d’opposition aux traitements fondés sur l’intérêt légitime (art. 21 du RGPD).
+</p>
+<p>
+  <strong>Remarque pratique :</strong> comme nous ne gérons aucun compte utilisateur et
+  n’enregistrons aucun texte, nous ne disposons en règle générale d’aucune donnée pouvant vous
+  être attribuée. Une réponse à une demande d’accès ne peut donc le plus souvent que confirmer
+  cette situation (art. 11 du RGPD).
+</p>
+<p>
+  Conformément à l’article 85 de la loi Informatique et Libertés, vous pouvez également définir des
+  directives relatives au sort de vos données après votre décès.
+</p>
+<p>Demandes à <a href="mailto:rightlyinfo@gmail.com">rightlyinfo@gmail.com</a>.</p>
+
+<h3>9. Droit d’introduire une réclamation</h3>
+<p>
+  Vous pouvez introduire une réclamation auprès d’une autorité de contrôle de la protection des
+  données, notamment dans l’État membre de votre résidence habituelle. En France, il s’agit de
+  la CNIL :
+</p>
+<div class="box">
+  Commission nationale de l’informatique et des libertés (CNIL)<br>
+  3 Place de Fontenoy, TSA 80715<br>
+  75334 Paris Cedex 07<br>
+  <a href="https://www.cnil.fr">www.cnil.fr</a>
+</div>
+<p>L’autorité compétente pour nous est :</p>
+<div class="box">
+  Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)<br>
+  Promenade 18<br>
+  91522 Ansbach<br>
+  Allemagne<br>
+  <a href="https://www.lda.bayern.de">www.lda.bayern.de</a>
+</div>
+
+<h3>10. Remarques sur l’utilisation</h3>
+<p>
+  <strong>Données d’autres personnes :</strong> si vous faites reformuler des textes contenant des
+  données personnelles de tiers (par ex. des noms, des informations sur la santé ou les finances
+  d’autres personnes), vous êtes vous-même responsable de ces données. Veuillez ne pas saisir
+  d’informations particulièrement sensibles concernant des tiers.
+</p>
+<p>
+  <strong>Résultats générés automatiquement :</strong> les reformulations proviennent d’un modèle
+  de langage. Elles peuvent être factuellement fausses ou modifier le sens. Relisez le résultat
+  avant de l’envoyer. Vous êtes responsable des messages envoyés. Rightly ne remplace pas un
+  conseil juridique, médical ou financier.
+</p>
+<p>
+  <strong>Âge minimum :</strong> l’app s’adresse aux personnes âgées de 16 ans et plus. Les
+  utilisatrices et utilisateurs plus jeunes ont besoin du consentement des titulaires de
+  l’autorité parentale.
+</p>
+
+<h3>11. Modifications</h3>
+<p>
+  Nous adaptons cette politique lorsque l’app ou la situation juridique change. La version en
+  vigueur est disponible à cette adresse.
+</p>
+
+<span id="nutzung"></span>
+<h2 id="conditions">Conditions d’utilisation</h2>
+<p>
+  L’abonnement « Rightly Pro » est régi par le contrat de licence standard d’Apple pour les achats
+  intégrés :
+  <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard
+  End User License Agreement</a>. Lors de l’achat, votre cocontractant est Apple, pas nous. Le
+  paiement, le renouvellement, la résiliation et les remboursements passent par votre
+  identifiant Apple.
+</p>
+<p>
+  <strong>Étendue du service :</strong> « Rightly Pro » comprend jusqu’à 50 actions d’IA par jour
+  (reformuler, e-mail, anglais, orthographe). Cette limite protège le service contre la surcharge
+  et les abus. Sans abonnement actif, les fonctions d’IA ne sont pas disponibles. Le clavier
+  lui-même reste utilisable sans restriction.
+</p>
+<p>
+  <strong>Période d’essai :</strong> si Apple accorde une offre de lancement pour votre
+  identifiant Apple, les 3 premiers jours sont gratuits. Apple n’accorde cette offre qu’une seule
+  fois par identifiant Apple.
+</p>
+<p>
+  <strong>Disponibilité :</strong> nous nous efforçons d’assurer un fonctionnement continu, mais
+  ne pouvons pas garantir une disponibilité ininterrompue. De brèves interruptions pour
+  maintenance ou en raison de pannes chez les prestataires utilisés sont possibles.
+</p>
+<p>
+  <strong>Responsabilité :</strong> nous sommes responsables conformément aux dispositions légales
+  en cas de faute intentionnelle et de négligence grave, ainsi qu’en cas d’atteinte à la vie, à
+  l’intégrité physique et à la santé. Pour le reste, la responsabilité est limitée au dommage
+  prévisible et typique pour ce type de contrat. Aucune clause des présentes ne limite les droits
+  que vous tenez des dispositions impératives du droit de la consommation applicable. Vous êtes responsable des contenus que vous créez
+  et envoyez à l’aide de l’app.
+</p>
+
+<span id="impressum"></span>
+<h2 id="mentions-legales">Mentions légales</h2>
+<p>Informations conformément au § 5 de la loi allemande sur les services numériques
+(Digitale-Dienste-Gesetz, DDG) :</p>
+<address>
+  Lucas Sancar<br>
+  Liniup (entreprise individuelle)<br>
+  Berufsschulstraße 11<br>
+  63795 Obernburg am Main<br>
+  Allemagne<br><br>
+  E-mail : <a href="mailto:rightlyinfo@gmail.com">rightlyinfo@gmail.com</a>
+</address>
+<p>Responsable du contenu : Lucas Sancar, adresse ci-dessus.</p>
+<p>
+  <strong>Règlement extrajudiciaire des litiges de consommation :</strong> nous ne sommes ni
+  disposés ni tenus à participer à une procédure de règlement des litiges devant un organisme de
+  médiation de la consommation.
+</p>
+
+<p class="stand">Mise à jour : 16 novembre 2026</p>
+
+</main>

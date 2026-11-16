@@ -17,6 +17,8 @@
 -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
+<link rel="alternate" hreflang="de" href="./">
+<link rel="alternate" hreflang="fr" href="fr/">
 <style>
   :root {
     --bg: #ffffff; --fg: #1a1a1a; --muted: #5c5c5c;
@@ -59,7 +61,7 @@
 <main>
 
 <h1>Rightly</h1>
-<p class="lead">Datenschutzerklärung und Impressum</p>
+<p class="lead">Datenschutzerklärung und Impressum · <a href="fr/" hreflang="fr" lang="fr">Français</a></p>
 
 <div class="nav">
   <a href="#datenschutz">Datenschutzerklärung</a>
@@ -115,13 +117,16 @@ die App bei jeder KI-Anfrage dieses Länderkürzel mit (zum Beispiel „CH“). 
 Schweizer Rechtschreibung (ss statt ß) oder lässt österreichische Wörter wie „Jänner“ stehen. Der
 KI-Anbieter erfährt dazu nur, welche Schreibweise er nutzen soll. Wir speichern die Region nicht.
 Bei jeder anderen Region geht nichts mit.</p>
+<p><strong>App-Sprache:</strong> Ist die App auf Französisch eingestellt, schickt sie bei jeder
+KI-Anfrage zusätzlich das Kürzel „fr“ mit, damit die KI auf Französisch antwortet. Die Region geht
+dann nicht mit. Bei deutscher App-Sprache geht kein Sprachkürzel mit.</p>
 <p><strong>Wie lange:</strong></p>
 <ul>
   <li>Auf <strong>unserem</strong> Server: gar nicht. Text und Befehl werden verarbeitet und
       sofort verworfen. Unsere Protokolle enthalten nur Zeitpunkt, Pfad und Statuscode, bei
       Störungen zusätzlich Fehlerart, Funktion und Textlänge, nach einer erfolgreichen Aktion
       zusätzlich einen Hash der Gerätekennung (siehe 3.2), die Abo-Art und die gewählte
-      Funktion. Nie Textinhalte.</li>
+      Funktion, bei französischer App-Sprache außerdem das Kürzel „fr“. Nie Textinhalte.</li>
   <li>Bei <strong>Anthropic</strong>: Anfragen über die Programmierschnittstelle werden nach
       Angaben von Anthropic innerhalb von 30 Tagen gelöscht. Stuft Anthropics automatische
       Prüfung eine Anfrage als möglichen Verstoß gegen die Nutzungsrichtlinien ein, kann
@@ -135,13 +140,14 @@ Bei jeder anderen Region geht nichts mit.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des
 Nutzungsvertrags, ohne diese Übermittlung kann die Funktion nicht erbracht werden).</p>
 
-<h3>3.2 Anonyme Gerätekennung</h3>
+<h3>3.2 Pseudonyme Gerätekennung</h3>
 <p><strong>Was:</strong> Eine zufällige Zeichenfolge, die die App auf deinem Gerät erzeugt.
-Sie enthält keine Angaben über dich oder dein Gerät. Wir können sie keiner Person zuordnen.</p>
+Sie enthält keine Angaben über dich oder dein Gerät. Name, Apple-ID oder Kontaktdaten erfahren
+wir dazu nicht.</p>
 <p><strong>Wozu:</strong> Um das Tageslimit von 50 Aktionen durchzusetzen und um zu zählen,
 wie viele verschiedene Geräte Rightly nutzen. Für die Zählung schreibt unser Server nach jeder
-erfolgreichen Aktion eine Zeile ins Protokoll: einen Hash der Kennung (eine Einwegverschlüsselung,
-aus der sich die Kennung nicht zurückrechnen lässt), die Abo-Art (ohne Abo, Testkauf oder
+erfolgreichen Aktion eine Zeile ins Protokoll: einen Hash der Kennung (ein Prüfwert aus einer Einweg-Hashfunktion,
+aus dem sich die Kennung nicht zurückrechnen lässt), die Abo-Art (ohne Abo, Testkauf oder
 App-Store-Abo) und die gewählte Funktion. Text, IP-Adresse und Abo-Nachweis stehen nicht darin. Außerdem nutzen wir die Kennung für
 die Zählung der Einrichtungsschritte (siehe 3.3) und die Zuordnung der Abo-Meldungen
 (siehe 3.6). Beim Kauf geht die Kennung an Apple.</p>
@@ -251,7 +257,7 @@ der Messung, wie Rightly genutzt wird).</p>
 </p>
 <p>
   Unser Server läuft bei Render in einem Rechenzentrum in den USA. Alles, was die App an ihn
-  schickt (Text, Befehl, Gerätekennung, IP-Adresse, Abo-Nachweis, bei CH, LI und AT die Region), gelangt also in die USA.
+  schickt (Text, Befehl, Gerätekennung, IP-Adresse, Abo-Nachweis, bei CH, LI und AT die Region, bei französischer App-Sprache das Kürzel „fr“), gelangt also in die USA.
   Render ist ein US-Unternehmen und unter dem EU-US Data Privacy Framework zertifiziert. Das ist
   die Grundlage (Angemessenheitsbeschluss, Art. 45 DSGVO); hilfsweise gelten die
   Standardvertragsklauseln aus dem Auftragsverarbeitungsvertrag von Render. Die Zahlung wickelt
@@ -368,6 +374,6 @@ der Messung, wie Rightly genutzt wird).</p>
   an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 
-<p class="stand">Stand: 15. November 2026</p>
+<p class="stand">Stand: 16. November 2026</p>
 
 </main>
